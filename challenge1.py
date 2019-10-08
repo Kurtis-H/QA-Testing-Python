@@ -1,6 +1,7 @@
 import unittest
 from selenium import webdriver
 
+
 class Challenge1(unittest.TestCase):
 
     def setUp(self):

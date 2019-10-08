@@ -9,7 +9,6 @@ def Fibonacci(n):
 
     while n > 0:
         if e < 1:
-            # print(0)
             print("0 - Zero")
             e += 1
             n -= 1

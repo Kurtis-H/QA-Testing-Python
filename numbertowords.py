@@ -12,7 +12,8 @@ def convert_to_words(number):
     for x in num:
         number += x
     del num
-    if len(number) % 3 == 1: number += "0"
+    if len(number) % 3 == 1:
+        number += "0"
     x = 0
     for digit in number:
         if x % 3 == 0:
@@ -25,7 +26,7 @@ def convert_to_words(number):
                 num = tens[int(digit)]
                 if n:
                     if num:
-                        num += "-" + ones[n]
+                        num += " " + ones[n]
                     else:
                         num = ones[n]
             word = num + " " + word

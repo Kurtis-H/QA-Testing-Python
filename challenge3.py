@@ -1,8 +1,32 @@
 import unittest
 from time import sleep
-
 from selenium import webdriver
-from selenium.webdriver.common.by import By
+
+# Challenge 3 - Loops:
+# Loops can be used to write your own wait statements.
+# They can also be used to iteration through a list of items.
+#
+# For this challenge, go to copart and print a list of all the “Popular Items” of vehicle Make/Models on the home page and the URL/href for each type.
+# This list can dynamically change depending on what is authored by the content creator but using a loop will make sure that everything will be displayed regardless of the list size.
+#
+# Your output in the console would look like:
+# IMPREZA - https://www.copart.com/popular/model/impreza
+# CAMRY - https://www.copart.com/popular/model/camry
+# ELANTRA - https://www.copart.com/popular/model/elantra
+# SONATA - https://www.copart.com/popular/model/sonata
+# COROLLA - https://www.copart.com/popular/model/corolla
+# ALTIMA - https://www.copart.com/popular/model/altima
+# FORESTER - https://www.copart.com/popular/model/forester
+# OPTIMA - https://www.copart.com/popular/model/optima
+# IMPALA - https://www.copart.com/popular/model/impala
+# PRIUS - https://www.copart.com/popular/model/prius
+# FORD - https://www.copart.com/popular/make/ford
+# TOYOTA - https://www.copart.com/popular/make/toyota
+# CHEVROLET - https://www.copart.com/popular/make/chevrolet
+# DODGE - https://www.copart.com/popular/make/dodge
+# HONDA - https://www.copart.com/popular/make/honda
+# NISSAN - https://www.copart.com/popular/make/nissan
+# SUBARU - https://www.copart.com/popular/make/subaru
 
 
 class Challenge3(unittest.TestCase):
