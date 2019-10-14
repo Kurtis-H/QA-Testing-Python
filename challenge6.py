@@ -43,10 +43,10 @@ class Challenge6(unittest.TestCase):
         self.driver.find_element_by_xpath('//*[@data-uname="ModelFilter"]').click()
         sleep(1)
 
-        try:
-            self.driver.find_element_by_xpath('(//input[@placeholder="Search"])[4]').send_keys("skyline")
-            sleep(1)
+        self.driver.find_element_by_xpath('(//input[@placeholder="Search"])[4]').send_keys("skyline")
+        sleep(1)
 
+        try:
             self.driver.find_element_by_xpath('//*[@value="Skyline"][@name="MODL"]').click()
             sleep(1)
         except Exception:
