@@ -46,15 +46,14 @@ class Challenge7(unittest.TestCase):
         x = 0
         y = 1
         while y < len(xpath1):
-            try:
-                self.driver.get(array2[y])
-                sleep(1)
+            self.driver.get(array2[y])
+            sleep(1)
 
-                self.assertTrue(self.driver.find_element_by_xpath("//span[@data-uname='lotsearchLotmodel']").text)
-
+            if array2[x] in self.driver.find_element_by_xpath("//span[@data-uname='lotsearchLotmodel']").text:
+            # if "kurtis" in self.driver.find_element_by_xpath("//span[@data-uname='lotsearchLotmodel']").text:
                 print(array2[x] + ": Passed")
 
-            except Exception:
+            else:
                 print(array2[x] + ": has Failed")
 
             x += 2
